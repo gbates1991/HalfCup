@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Rebate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo_merged.png" translatesAutoresizingMaskIntoConstraints="NO" id="83x-hI-KyK">
+                                <rect key="frame" x="66" y="107" width="283" height="201"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="cRO-Y9-SBL">
+                                <rect key="frame" x="0.0" y="622" width="414" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="3fx-nz-8r0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jT-9q-WM2">
+                                <rect key="frame" x="102" y="345" width="210" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="1cS-Hc-upj"/>
+                                    <constraint firstAttribute="width" constant="210" id="sp8-nD-sjC"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="btn_connect_facebook.png"/>
+                                <connections>
+                                    <action selector="onBtnConnectFB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="miY-9O-rFe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4jT-9q-WM2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BJe-jJ-rCp"/>
+                            <constraint firstItem="4jT-9q-WM2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EI1-Uo-dvT"/>
+                            <constraint firstItem="4jT-9q-WM2" firstAttribute="top" secondItem="83x-hI-KyK" secondAttribute="bottom" constant="40" id="FBj-nr-eYo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cRO-Y9-SBL" secondAttribute="bottom" id="GdI-8p-fbf"/>
+                            <constraint firstItem="cRO-Y9-SBL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dhs-PE-bG0"/>
+                            <constraint firstItem="cRO-Y9-SBL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f2Q-dN-Y5e"/>
+                            <constraint firstItem="83x-hI-KyK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fXL-zD-niL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cRO-Y9-SBL" secondAttribute="trailing" constant="-20" id="sa2-rW-b5g"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="83x-hI-KyK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="415"/>
+        </scene>
+        <!--Main Screen View Controller-->
+        <scene sceneID="jbZ-Df-TnD">
+            <objects>
+                <viewController storyboardIdentifier="MainScreen" id="KAz-Fz-cmP" customClass="MainScreenViewController" customModule="Rebate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="erg-1Y-gfm"/>
+                        <viewControllerLayoutGuide type="bottom" id="j9G-io-Znw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8FE-7o-3z6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNO-9X-pyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="385"/>
+        </scene>
+        <!--Promotion View Controller-->
+        <scene sceneID="WXr-SX-43U">
+            <objects>
+                <viewController storyboardIdentifier="PromotionScreen" id="aha-px-kxR" customClass="PromotionViewController" customModule="Rebate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2PE-hv-8WT"/>
+                        <viewControllerLayoutGuide type="bottom" id="yGA-er-oL2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xuU-19-lpE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-Mw-9CV">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="4wb-DZ-ePU"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="OcD-Mw-9CV" secondAttribute="trailing" constant="-20" id="ChF-1F-GEH"/>
+                            <constraint firstItem="OcD-Mw-9CV" firstAttribute="leading" secondItem="xuU-19-lpE" secondAttribute="leadingMargin" constant="-20" id="IgI-cO-hon"/>
+                            <constraint firstItem="OcD-Mw-9CV" firstAttribute="top" secondItem="2PE-hv-8WT" secondAttribute="bottom" constant="8" id="v4D-Eh-rFU" userLabel="Navigation Bar.top = Top Layout Guide.bottom"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="OcD-Mw-9CV" id="Tex-aS-gaV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cg4-uU-zym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="385"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottom.png" width="600" height="255"/>
+        <image name="btn_connect_facebook.png" width="516" height="107"/>
+        <image name="logo_merged.png" width="443" height="357"/>
+    </resources>
+</document>

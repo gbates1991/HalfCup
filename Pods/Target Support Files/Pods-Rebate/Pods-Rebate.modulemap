@@ -1,0 +1,6 @@
+framework module Pods_Rebate {
+  umbrella header "Pods-Rebate-umbrella.h"
+
+  export *
+  module * { export * }
+}

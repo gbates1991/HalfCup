@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (3.1.4)
+  - ImageLoader (0.8.6)
+  - SnapKit (0.18.0)
+  - SwiftyJSON (2.3.2)
+  - XXPagingScrollView (HEAD based on 1.0):
+    - SnapKit
+
+DEPENDENCIES:
+  - Alamofire
+  - ImageLoader
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - XXPagingScrollView (HEAD)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
+  ImageLoader: 3faea9650cbf4eb19ec57defc977bd1a6bf3c55c
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  XXPagingScrollView: 0b4d4a46474e8653cc3df0c5b7b84f8004a99c81
+
+COCOAPODS: 0.39.0
